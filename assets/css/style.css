@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: rgb(50, 50, 50);
 }
 
 .wrapper {
@@ -27,26 +27,27 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 100%);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  background-color: hsl(0, 0%, 57%);
+  border-radius: 10px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  border: 2px solid black;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #a3a3a3;
   height: 2px;
 }
 
@@ -54,6 +55,22 @@ header {
   min-height: 100px;
 }
 
+.setting {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  flex-direction: column;
+  grid-template-columns: auto auto;
+}
+
+.setting input {
+  cursor: pointer;
+}
+
+.number-field {
+  width: 3rem;
+}
 .card-footer {
   text-align: center;
 }
@@ -88,7 +105,7 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+button {
   cursor: default;
   background: #c0c7cf;
 }
